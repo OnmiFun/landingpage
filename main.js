@@ -23,8 +23,8 @@ const getRandomIcon = () =>
 function shuffleArray(arr) {
   const result = arr.slice()
   for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]]
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
   }
   return result
 }
@@ -32,7 +32,7 @@ function shuffleArray(arr) {
 function getRandomShuffleDelay() {
   return (
     Math.floor(
-      Math.random() * (SHUFFLE_DELAY_MAX_MS - SHUFFLE_DELAY_MIN_MS + 1)
+      Math.random() * (SHUFFLE_DELAY_MAX_MS - SHUFFLE_DELAY_MIN_MS + 1),
     ) + SHUFFLE_DELAY_MIN_MS
   )
 }
@@ -299,7 +299,7 @@ const SLIDERS = [
   {
     id: 6,
     iconBox: "/assets/icons/play-6.svg",
-    boxColor: "#AC6AFF",
+    boxColor: "#284CFF",
     backgroundUrl: "/assets/sliders/slider-bg-5.svg",
     title: "Data That Matters",
     description:
@@ -400,7 +400,7 @@ function animateBuzzFirstCard() {
       yoyo: true,
       repeat: 2,
       ease: "power2.inOut",
-    }
+    },
   )
 }
 function shuffleAndRerenderCoins() {
